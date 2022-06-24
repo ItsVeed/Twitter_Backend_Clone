@@ -27,12 +27,14 @@ class RetrieveTweet(generics.RetrieveAPIView):
     permission_classes = [IsAuthenticated]
 
 class DeleteTweet(generics.DestroyAPIView):
-    
+    permission_classes= [IsAuthenticated]
+
     def get_queryset(self):
         queryset = Tweet.objects.filter(user=self.request.user)
         return queryset
 
 @api_view(['PUT'])
+@permission_classes([IsAuthenticated])
 def LikeTweet(request, pk):
     try:
         tweet = Tweet.objects.get(pk=pk)
