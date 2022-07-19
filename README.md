@@ -20,7 +20,7 @@ Development
 
 Production
 
-This setup is not ideal and I would instead suggest follow your preferred cloud providers guide on hosting a django project
+This setup is not ideal and I would instead suggest follow your preferred cloud providers guide on hosting a django project.
 
 - 1) Modify the .env.dev and .env.db files and change the POSTGRES_USER, POSTGRES_PASSWORD and the SECRET_KEY to your preferences
 - 2) Open a terminal and execute this command `docker-compose -f docker-compose-prod.yml up --build`
