@@ -1,7 +1,7 @@
 # tweet/serializers.py
 
 from rest_framework import serializers
-from .models import Tweet, Comment
+from .models import Tweet, Comment, User
 
 class CreateCommentSerializer(serializers.ModelSerializer):
     class Meta:
