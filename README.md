@@ -1,6 +1,12 @@
 # Twitter_Backend_Clone
 A simple rest api with jwt token authentication to be used as a backend for a simple twitter clone.
 
+### Tech Stack
+- Django
+- Nginx
+- PostgreSQL
+- Gunicorn
+
 ## Features
 - Tweets
 - Messages
